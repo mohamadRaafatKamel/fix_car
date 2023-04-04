@@ -48,6 +48,10 @@
             border-color: #5ed590 !important;
             background-color: #5ed590 !important;
         }
+        .btn-info:focus{
+            border-color: #5ed590 !important;
+            background-color: #5ed590 !important;
+        }
     </style>
 </head>
 <body class="vertical-layout vertical-menu 1-column   menu-expanded blank-page blank-page"

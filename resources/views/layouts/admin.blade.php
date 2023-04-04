@@ -83,7 +83,7 @@
             border-color: #064420 !important;
             background-color: #064420 !important;
         }
-        .btn-primary:hover{
+        .btn-primary:hover, .btn-primary:focus{
             border-color: #5ed590 !important;
             background-color: #5ed590 !important;
         }

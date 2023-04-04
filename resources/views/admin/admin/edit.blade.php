@@ -7,6 +7,7 @@ if(! $permissoin = \App\Models\Role::havePremission(['admin_idt']))
     $readonly="readonly";
 else 
     $readonly="";
+
 ?>
     <div class="app-content content">
         <div class="content-wrapper">
@@ -100,7 +101,8 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="projectinput1"> صلاحيات </label>
-                                                            <select class="form-control" id="permission" name="permission" required {{ $readonly }}>
+                                                            <select class="form-control" id="permission" name="permission" required
+                                                            @if ($admins->id == Auth::user()->id) readonly @endif {{ $readonly }}>
                                                                 <option></option>
                                                                 @if($roles)
                                                                     @foreach($roles as $role)

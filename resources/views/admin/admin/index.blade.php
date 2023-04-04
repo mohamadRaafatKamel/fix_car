@@ -66,7 +66,7 @@
                                                         <td>{{$admin -> email}}</td>
                                                         <td>{{\App\Models\Admin::getRoleNamebyId($admin->permission)}}</td>
                                                         <td>
-                                                            @if ($admin->id != Auth::user()->id && $admin->id != 1)
+                                                            @if ($admin->id != 1)
                                                             <div class="btn-group" role="group" aria-label="Basic example">
                                                                 <a href="{{route('admin.admin.edit',['id'=> $admin->id ])}}"
                                                                     class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">تعديل</a>
