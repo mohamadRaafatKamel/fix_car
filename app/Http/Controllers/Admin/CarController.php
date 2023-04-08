@@ -101,15 +101,16 @@ class CarController extends Controller
             if (!$request->has('status'))
                 $request->request->add(['status' => 1]);
 
+            $request->request->add(['admin_id' =>  Auth::user()->id ]);
+            $car= Car::create($request->except(['_token']));
+
             if ($request->has('image')){
                 $image = $request->file('image');
-                $imageName = "car_".str_replace(' ', '_', $request->id) . ".". $image->extension();
+                $imageName = "car_".str_replace(' ', '_', $car->id) . ".". $image->extension();
                 $image->move(public_path('cars'),$imageName);
-                $request->request->add(['img' =>  "public/cars/".$imageName ]);
-            }
 
-            $request->request->add(['admin_id' =>  Auth::user()->id ]);
-            $spc= Car::create($request->except(['_token']));
+                $car->update(['img' => "public/cars/".$imageName ]);
+            }
 
             if(isset($request->btn))
                 if($request->btn =="saveAndNew")

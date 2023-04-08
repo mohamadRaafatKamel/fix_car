@@ -231,7 +231,7 @@ else
 
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label class="label-control" for="image">اضف صوره</label>
+                                                            <label class="label-control" for="image">اضف مرفق</label>
                                                             <input type="file" id="image" {{ $readonly }}
                                                                        class="form-control" value=""
                                                                        accept="image/*"
@@ -242,9 +242,15 @@ else
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-md-6">
-                                                        @if($datas -> img != null)
-                                                            <img width="100px" height="100px" src="../../../{{$datas -> img}}">
+                                                    <div class="col-md-6" style="padding-top: 30px;">
+                                                        {{-- @if($datas -> img != null)
+                                                            <a href="../../../{{$datas -> img}}" download> تحميل </a>
+                                                        @endif --}}
+
+                                                        @if($datas -> img)
+                                                            <?php $arr = explode( '.', $datas -> img ); ?>
+                                                            <a href="/fix_car/{{$datas -> img}}"  download="Car File.{{$arr[count($arr)-1]}}"
+                                                                class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">تحميل</a>
                                                         @endif
                                                     </div>
 

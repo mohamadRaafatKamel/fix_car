@@ -195,9 +195,9 @@
 
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="image"> اضف صوره  </label>
+                                                            <label for="image"> اضف مرفق  </label>
                                                             <input type="file" id="image" class="form-control"
-                                                                       accept="image/*" name="image">
+                                                                       accept="file/*" name="image">
                                                                 @error('image')
                                                                 <span class="text-danger">{{$message}}</span>
                                                                 @enderror

@@ -63,6 +63,7 @@
                                                 <th> التظليل </th>
                                                 <th> التصفيح </th>
                                                 <th> الجهة التابعة لها </th>
+                                                <th> المرفق</th>
                                                 <th>الحالة</th>
                                                 <th></th>
                                             </tr>
@@ -83,6 +84,13 @@
                                                         <td>{{$data -> getMyEltazlel()}}</td>
                                                         <td>{{$data -> getMyEltasfe7()}}</td>
                                                         <td>{{$data -> getMySubsidiary() }}</td>
+                                                        <td>
+                                                            @if($data -> img)
+                                                            <?php $arr = explode( '.', $data -> img ); ?>
+                                                            <a href="/fix_car/{{$data -> img}}"  download="Car File.{{$arr[count($arr)-1]}}"
+                                                                class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">تحميل</a>
+                                                            @endif
+                                                        </td>
                                                         <td>{{$data ->getActive()}}</td>
                                                         <td>
                                                             {{-- <div class="btn-group" role="group" aria-label="Basic example"> --}}
