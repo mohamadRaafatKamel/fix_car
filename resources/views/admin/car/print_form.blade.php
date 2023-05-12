@@ -64,25 +64,25 @@
         <br/>
         <div class="row">
             <div class="col-4">
-                <div class="row"><div class="col-9">عجلة الاحتياط عدد</div><div class="col-3">( @if($datas->f1_3gla)  {{$datas->f1_3gla}} @else 0 @endif )</div></div>
-                <div class="row"><div class="col-9">عفريته و مفتاح عجل عدد</div><div class="col-3">( @if($datas->f1_3freta)  {{$datas->f1_3freta}} @else 0 @endif )</div></div>
-                <div class="row"><div class="col-9">طفاية حريق عدد</div><div class="col-3">( @if($datas->f1_tfaya)  {{$datas->f1_tfaya}} @else 0 @endif )</div></div>
-                <div class="row"><div class="col-9">مثلث عدد</div><div class="col-3">( @if($datas->f1_msls)  {{$datas->f1_msls}} @else 0 @endif )</div></div>
-                <div class="row"><div class="col-9">جهاز راديو  مسجل عدد</div><div class="col-3">( @if($datas->f1_radio)  {{$datas->f1_radio}} @else 0 @endif )</div></div>
-                <div class="row"><div class="col-9">سفتي عدد</div><div class="col-3">( @if($datas->f1_sefty)  {{$datas->f1_sefty}} @else 0 @endif )</div></div>
-                <div class="row"><div class="col-9">جهاز اشاره مستطيل عدد</div><div class="col-3">( @if($datas->f1_mostatel)  {{$datas->f1_mostatel}} @else 0 @endif )</div></div>
+                <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_3gla && $datas->f1_3gla > 0) checked @endif/>  عجلة الاحتياط عدد </div><div class="col-3">( @if($datas->f1_3gla)  {{$datas->f1_3gla}} @else 0 @endif )</div></div>
+                <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_3freta && $datas->f1_3freta > 0) checked @endif/>عفريته و مفتاح عجل عدد</div><div class="col-3">( @if($datas->f1_3freta)  {{$datas->f1_3freta}} @else 0 @endif )</div></div>
+                <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_tfaya && $datas->f1_tfaya > 0) checked @endif/>طفاية حريق عدد</div><div class="col-3">( @if($datas->f1_tfaya)  {{$datas->f1_tfaya}} @else 0 @endif )</div></div>
+                <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_msls && $datas->f1_msls > 0) checked @endif/>مثلث عدد</div><div class="col-3">( @if($datas->f1_msls)  {{$datas->f1_msls}} @else 0 @endif )</div></div>
+                <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_radio && $datas->f1_radio > 0) checked @endif/>جهاز راديو  مسجل عدد</div><div class="col-3">( @if($datas->f1_radio)  {{$datas->f1_radio}} @else 0 @endif )</div></div>
+                <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_sefty && $datas->f1_sefty > 0) checked @endif/>سفتي عدد</div><div class="col-3">( @if($datas->f1_sefty)  {{$datas->f1_sefty}} @else 0 @endif )</div></div>
+                <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_mostatel && $datas->f1_mostatel > 0) checked @endif/>جهاز اشاره مستطيل عدد</div><div class="col-3">( @if($datas->f1_mostatel)  {{$datas->f1_mostatel}} @else 0 @endif )</div></div>
             </div>
             <div class="col-4">
                 <img style="width: 100%;" src="{{asset('assets/admin/print_car.jpeg')}}">
             </div>
             <div class="col-4">
-                <div class="row"><div class="col-9">طيس عدد</div><div class="col-3">( @if($datas->f1_tes)  {{$datas->f1_tes}} @else 0 @endif )</div></div>
-                <div class="row"><div class="col-9">شنطه عده عدد</div><div class="col-3">( @if($datas->f1_4nth)  {{$datas->f1_4nth}} @else 0 @endif )</div></div>
-                <div class="row"><div class="col-9">صوره الاستماره عدد</div><div class="col-3">( @if($datas->f1_form_img)  {{$datas->f1_form_img}} @else 0 @endif )</div></div>
-                <div class="row"><div class="col-9">ريموت عدد</div><div class="col-3">( @if($datas->f1_remot)  {{$datas->f1_remot}} @else 0 @endif )</div></div>
-                <div class="row"><div class="col-9">لوحه اماميه و لوحه خلفيه عدد</div><div class="col-3">( @if($datas->f1_front_back_lo7a)  {{$datas->f1_front_back_lo7a}} @else 0 @endif )</div></div>
-                <div class="row"><div class="col-9">دعام خلفي امامي عدد</div><div class="col-3">( @if($datas->f1_front_back_d3am)  {{$datas->f1_front_back_d3am}} @else 0 @endif )</div></div>
-                <div class="row"><div class="col-9">جهاز اتصال عدد</div><div class="col-3">( @if($datas->f1_call_dev)  {{$datas->f1_call_dev}} @else 0 @endif )</div></div>
+                <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_tes && $datas->f1_tes > 0) checked @endif/>طيس عدد</div><div class="col-3">( @if($datas->f1_tes)  {{$datas->f1_tes}} @else 0 @endif )</div></div>
+                <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_4nth && $datas->f1_4nth > 0) checked @endif/>شنطه عده عدد</div><div class="col-3">( @if($datas->f1_4nth)  {{$datas->f1_4nth}} @else 0 @endif )</div></div>
+                <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_form_img && $datas->f1_form_img > 0) checked @endif/>صوره الاستماره عدد</div><div class="col-3">( @if($datas->f1_form_img)  {{$datas->f1_form_img}} @else 0 @endif )</div></div>
+                <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_remot && $datas->f1_remot > 0) checked @endif/>ريموت عدد</div><div class="col-3">( @if($datas->f1_remot)  {{$datas->f1_remot}} @else 0 @endif )</div></div>
+                <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_front_back_lo7a && $datas->f1_front_back_lo7a > 0) checked @endif/>لوحه اماميه و لوحه خلفيه عدد</div><div class="col-3">( @if($datas->f1_front_back_lo7a)  {{$datas->f1_front_back_lo7a}} @else 0 @endif )</div></div>
+                <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_front_back_d3am && $datas->f1_front_back_d3am > 0) checked @endif/>دعام خلفي امامي عدد</div><div class="col-3">( @if($datas->f1_front_back_d3am)  {{$datas->f1_front_back_d3am}} @else 0 @endif )</div></div>
+                <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_call_dev && $datas->f1_call_dev > 0) checked @endif/>جهاز اتصال عدد</div><div class="col-3">( @if($datas->f1_call_dev)  {{$datas->f1_call_dev}} @else 0 @endif )</div></div>
             </div>
 
             <p style="padding-right: 70px;">  العوارض : {{ $datas->f1_el3ward }}
@@ -189,11 +189,11 @@
 <script>
 
 window.onload = function(){
-    // window.print();
+    window.print();
 }
 window.addEventListener("afterprint", (event) => {
-  console.log("After print");
-//   window.close();
+  console.log("Aprint");
+  window.close();
 });
 </script>
 @endsection

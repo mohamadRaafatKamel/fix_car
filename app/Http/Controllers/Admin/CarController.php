@@ -162,6 +162,11 @@ class CarController extends Controller
 
             $data->update($request->except(['_token']));
 
+            // if(isset($request->btn))
+            //     if($request->btn =="saveAndPrint")
+            //         redirect()->route('admin.stock.print', ['id' => $id])->with('_blank');
+            //         // return redirect()->route('admin.stock.print');
+
             return redirect()->route('admin.stock.edit', ['id' => $id])->with(['success' => 'تم التحديث بنجاح']);
 
         } catch (\Exception $ex) {

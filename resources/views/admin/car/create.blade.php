@@ -335,6 +335,19 @@
 
                                                     <div class="col-md-6">
                                                         <div class="form-group">
+                                                            <label for="f1_day1"> اليوم  </label>
+                                                            <input type="text" value="" id="f1_day1"
+                                                                   class="form-control" 
+                                                                   placeholder="اليوم "
+                                                                   name="f1_day1">
+                                                            @error('f1_day1')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
                                                             <label for="f1_date2"> التاريخ التسليم  </label>
                                                             <input type="datetime-local" value="" id="f1_date2"
                                                                    class="form-control" 
@@ -348,12 +361,38 @@
 
                                                     <div class="col-md-6">
                                                         <div class="form-group">
+                                                            <label for="f1_day2"> يوم التسليم  </label>
+                                                            <input type="text" value="" id="f1_day2"
+                                                                   class="form-control" 
+                                                                   placeholder="يوم التسليم "
+                                                                   name="f1_day2">
+                                                            @error('f1_day2')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
                                                             <label for="projectinput1"> التاريخ دخول السياره  </label>
                                                             <input type="datetime-local" value="" id="f1_enter_date3"
                                                                    class="form-control" 
                                                                    placeholder="التاريخ دخول السياره "
                                                                    name="f1_enter_date3">
                                                             @error('f1_enter_date3')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_enter_day3"> يوم دخول السياره  </label>
+                                                            <input type="text" value="" id="f1_enter_day3"
+                                                                   class="form-control" 
+                                                                   placeholder="يوم دخول السياره "
+                                                                   name="f1_enter_day3">
+                                                            @error('f1_enter_day3')
                                                             <span class="text-danger">{{$message}}</span>
                                                             @enderror
                                                         </div>
