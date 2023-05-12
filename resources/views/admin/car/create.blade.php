@@ -225,6 +225,354 @@
                                                         </div>
                                                     </div>
                                                 </div>
+
+                                                <h4 class="form-section"><i class="ft-home"></i>  بيانات الاستمارة  </h4>
+                                                <div class="row">
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_receiver_name"> اسم المستلم  </label>
+                                                            <input type="text" value="" id="f1_receiver_name"
+                                                                   class="form-control" 
+                                                                   placeholder="اسم المستلم "
+                                                                   name="f1_receiver_name">
+                                                            @error('f1_receiver_name')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_receiver_phone"> جوال المستفيد  </label>
+                                                            <input type="text" value="" id="f1_receiver_phone"
+                                                                   class="form-control" 
+                                                                   placeholder="جوال المستفيد "
+                                                                   name="f1_receiver_phone">
+                                                            @error('f1_receiver_phone')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="projectinput1"> رقم هوية المستفيد  </label>
+                                                            <input type="text" value="" id="f1_receiver_id"
+                                                                   class="form-control" 
+                                                                   placeholder="رقم هوية المستفيد "
+                                                                   name="f1_receiver_id">
+                                                            @error('f1_receiver_id')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="projectinput1"> الجهة  </label>
+                                                            <input type="text" value="" id="f1_elgha"
+                                                                   class="form-control" 
+                                                                   placeholder="الجهة "
+                                                                   name="f1_elgha">
+                                                            @error('f1_elgha')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="projectinput1"> اسم الصنف  </label>
+                                                            <input type="text" value="" id="f1_item_name"
+                                                                   class="form-control" 
+                                                                   placeholder="اسم الصنف "
+                                                                   name="f1_item_name">
+                                                            @error('f1_item_name')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_car_categ"> فئة السيارة  </label>
+                                                            <input type="text" value="" id="f1_car_categ"
+                                                                   class="form-control" 
+                                                                   placeholder="فئة السيارة "
+                                                                   name="f1_car_categ">
+                                                            @error('f1_car_categ')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    {{-- <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="projectinput1"> اليوم  </label>
+                                                            <input type="text" value="" id="f1_day1"
+                                                                   class="form-control" 
+                                                                   placeholder="اليوم "
+                                                                   name="f1_day1">
+                                                            @error('f1_day1')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div> --}}
+                                                    
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="projectinput1"> التاريخ  </label>
+                                                            <input type="datetime-local" value="" id="f1_date1"
+                                                                   class="form-control" 
+                                                                   placeholder="التاريخ "
+                                                                   name="f1_date1">
+                                                            @error('f1_date1')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_date2"> التاريخ التسليم  </label>
+                                                            <input type="datetime-local" value="" id="f1_date2"
+                                                                   class="form-control" 
+                                                                   placeholder="التاريخ التسليم "
+                                                                   name="f1_date2">
+                                                            @error('f1_date2')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="projectinput1"> التاريخ دخول السياره  </label>
+                                                            <input type="datetime-local" value="" id="f1_enter_date3"
+                                                                   class="form-control" 
+                                                                   placeholder="التاريخ دخول السياره "
+                                                                   name="f1_enter_date3">
+                                                            @error('f1_enter_date3')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="row">
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_3gla"> عجلة الاحتياط عدد  </label>
+                                                            <input type="number" value="" id="f1_3gla"
+                                                                   class="form-control" 
+                                                                   placeholder="عجلة الاحتياط عدد "
+                                                                   name="f1_3gla">
+                                                            @error('f1_3gla')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_3freta"> عفريته و مفتاح عجل عدد  </label>
+                                                            <input type="number" value="" id="f1_3freta"
+                                                                   class="form-control" 
+                                                                   placeholder="عفريته و مفتاح عجل عدد "
+                                                                   name="f1_3freta">
+                                                            @error('f1_3freta')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_tfaya"> طفاية حريق عدد  </label>
+                                                            <input type="number" value="" id="f1_tfaya"
+                                                                   class="form-control" 
+                                                                   placeholder="طفاية حريق عدد "
+                                                                   name="f1_tfaya">
+                                                            @error('f1_tfaya')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_msls"> مثلث عدد  </label>
+                                                            <input type="number" value="" id="f1_msls"
+                                                                   class="form-control" 
+                                                                   placeholder="مثلث عدد "
+                                                                   name="f1_msls">
+                                                            @error('f1_msls')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_radio"> جهاز راديو  مسجل عدد  </label>
+                                                            <input type="number" value="" id="f1_radio"
+                                                                   class="form-control" 
+                                                                   placeholder="جهاز راديو  مسجل عدد "
+                                                                   name="f1_radio">
+                                                            @error('f1_radio')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_sefty"> سفتي عدد  </label>
+                                                            <input type="number" value="" id="f1_sefty"
+                                                                   class="form-control" 
+                                                                   placeholder="سفتي عدد "
+                                                                   name="f1_sefty">
+                                                            @error('f1_sefty')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_mostatel"> جهاز اشاره مستطيل عدد  </label>
+                                                            <input type="number" value="" id="f1_mostatel"
+                                                                   class="form-control" 
+                                                                   placeholder="جهاز اشاره مستطيل عدد "
+                                                                   name="f1_mostatel">
+                                                            @error('f1_mostatel')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_tes"> طيس عدد  </label>
+                                                            <input type="number" value="" id="f1_tes"
+                                                                   class="form-control" 
+                                                                   placeholder="طيس عدد "
+                                                                   name="f1_tes">
+                                                            @error('f1_tes')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_4nth"> شنطه عده عدد  </label>
+                                                            <input type="number" value="" id="f1_4nth"
+                                                                   class="form-control" 
+                                                                   placeholder="شنطه عده عدد "
+                                                                   name="f1_4nth">
+                                                            @error('f1_4nth')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_form_img"> صوره الاستماره عدد  </label>
+                                                            <input type="number" value="" id="f1_form_img"
+                                                                   class="form-control" 
+                                                                   placeholder="صوره الاستماره عدد "
+                                                                   name="f1_form_img">
+                                                            @error('f1_form_img')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_remot"> ريموت عدد  </label>
+                                                            <input type="number" value="" id="f1_remot"
+                                                                   class="form-control" 
+                                                                   placeholder="ريموت عدد "
+                                                                   name="f1_remot">
+                                                            @error('f1_remot')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_front_back_lo7a"> لوحه اماميه و لوحه خلفيه عدد  </label>
+                                                            <input type="number" value="" id="f1_front_back_lo7a"
+                                                                   class="form-control" 
+                                                                   placeholder="لوحه اماميه و لوحه خلفيه عدد "
+                                                                   name="f1_front_back_lo7a">
+                                                            @error('f1_front_back_lo7a')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_front_back_d3am"> دعام خلفي امامي عدد  </label>
+                                                            <input type="number" value="" id="f1_front_back_d3am"
+                                                                   class="form-control" 
+                                                                   placeholder="دعام خلفي امامي عدد "
+                                                                   name="f1_front_back_d3am">
+                                                            @error('f1_front_back_d3am')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_call_dev"> جهاز اتصال عدد </label>
+                                                            <input type="number" value="" id="f1_call_dev"
+                                                                   class="form-control" 
+                                                                   placeholder="جهاز اتصال عدد "
+                                                                   name="f1_call_dev">
+                                                            @error('f1_call_dev')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="f1_el3ward"> العوارض  </label>
+                                                            <input type="text" value="" id="f1_el3ward"
+                                                                   class="form-control" 
+                                                                   placeholder="العوارض "
+                                                                   name="f1_el3ward">
+                                                            @error('f1_el3ward')
+                                                            <span class="text-danger">{{$message}}</span>
+                                                            @enderror
+                                                        </div>
+                                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                </div>
+
+
                                             </div>
 
 

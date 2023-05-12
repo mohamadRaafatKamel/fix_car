@@ -98,13 +98,13 @@
 <body class="vertical-layout vertical-menu 2-columns  @if(Request::is('admin/users/tickets/reply*')) chat-application @endif menu-expanded fixed-navbar"
       data-open="click" data-menu="vertical-menu" data-col="2-columns">
 <!-- fixed-top-->
-@include('admin.include.header')
+{{-- @include('admin.include.header') --}}
 <!-- ////////////////////////////////////////////////////////////////////////////-->
-@include('admin.include.sidebar')
+{{-- @include('admin.include.sidebar') --}}
 
 @yield('content')
 <!-- ////////////////////////////////////////////////////////////////////////////-->
-@include('admin.include.footer')
+{{-- @include('admin.include.footer') --}}
 
 {{--@notify_js--}}
 {{--@notify_render--}}

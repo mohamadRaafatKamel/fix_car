@@ -16,14 +16,12 @@ class Car extends Model
      * @var array
      */
     protected $fillable = [
-        'id', 'sanaf_id', 'car_type', 'car_model', 'color_in', 'color_out', 'hykl_no', 'car_no', 'car_category', 'eltazlel', 'eltasfe7', 'subsidiary', 'admin_id', 'status', 'created_at', 'updated_at'    
-        ,'img'
+        'id', 'sanaf_id', 'car_type', 'car_model', 'color_in', 'color_out', 'hykl_no', 'car_no', 'car_category', 'eltazlel', 'eltasfe7', 'subsidiary', 'img', 'f1_receiver_name', 'f1_receiver_phone', 'f1_receiver_id', 'f1_elgha', 'f1_item_name', 'f1_car_categ', 'f1_day1', 'f1_date1', 'f1_time1', 'f1_day2', 'f1_date2', 'f1_time2', 'f1_enter_day3', 'f1_enter_date3', 'f1_enter_time3', 'f1_3gla', 'f1_3freta', 'f1_tfaya', 'f1_msls', 'f1_radio', 'f1_sefty', 'f1_mostatel', 'f1_tes', 'f1_4nth', 'f1_form_img', 'f1_remot', 'f1_front_back_lo7a', 'f1_front_back_d3am', 'f1_call_dev', 'f1_el3ward', 'admin_id', 'status', 'created_at', 'updated_at'
     ];
 
     public function  scopeSelection($query){
         return $query -> select(
-            'id', 'sanaf_id', 'car_type', 'car_model', 'color_in', 'color_out', 'hykl_no', 'car_no', 'car_category', 'eltazlel', 'eltasfe7', 'subsidiary', 'admin_id', 'status', 'created_at', 'updated_at'    
-            ,'img'
+            'id', 'sanaf_id', 'car_type', 'car_model', 'color_in', 'color_out', 'hykl_no', 'car_no', 'car_category', 'eltazlel', 'eltasfe7', 'subsidiary', 'img', 'f1_receiver_name', 'f1_receiver_phone', 'f1_receiver_id', 'f1_elgha', 'f1_item_name', 'f1_car_categ', 'f1_day1', 'f1_date1', 'f1_time1', 'f1_day2', 'f1_date2', 'f1_time2', 'f1_enter_day3', 'f1_enter_date3', 'f1_enter_time3', 'f1_3gla', 'f1_3freta', 'f1_tfaya', 'f1_msls', 'f1_radio', 'f1_sefty', 'f1_mostatel', 'f1_tes', 'f1_4nth', 'f1_form_img', 'f1_remot', 'f1_front_back_lo7a', 'f1_front_back_d3am', 'f1_call_dev', 'f1_el3ward', 'admin_id', 'status', 'created_at', 'updated_at'
         );
     }
 

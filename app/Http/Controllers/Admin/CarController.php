@@ -169,4 +169,14 @@ class CarController extends Controller
         }
     }
 
+    public function print_form($id)
+    {
+        $datas = Car::select()->find($id);
+        $asnafs = Asnaf::select()->get();
+        if(!$datas){
+            return redirect()->route('admin.dashboard');
+        }
+        return view('admin.car.print_form',compact('datas','asnafs'));
+    }
+
 }

@@ -49,6 +49,8 @@ Route::group(['namespace'=>'App\Http\Controllers\Admin', 'middleware'=>'auth:adm
         Route::get('edit/{id}','CarController@edit')->name('admin.stock.edit');
         Route::post('update/{id}','CarController@update')->name('admin.stock.update');
 
+        Route::get('print/{id}','CarController@print_form')->name('admin.stock.print');
+
         Route::get('delete/{id}','CarController@destroy') -> name('admin.stock.delete');
     });
     ##################### End Stock ########################
