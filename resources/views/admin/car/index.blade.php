@@ -63,8 +63,8 @@
                                                 <th> التظليل </th>
                                                 <th> التصفيح </th>
                                                 <th> الجهة التابعة لها </th>
-                                                <th> المرفق</th>
                                                 <th>الحالة</th>
+                                                <th> المرفق</th>
                                                 <th></th>
                                             </tr>
                                             </thead>
@@ -84,6 +84,7 @@
                                                         <td>{{$data -> getMyEltazlel()}}</td>
                                                         <td>{{$data -> getMyEltasfe7()}}</td>
                                                         <td>{{$data -> getMySubsidiary() }}</td>
+                                                        <td>{{$data ->getActive()}}</td>
                                                         <td>
                                                             @if($data -> img)
                                                             <?php $arr = explode( '.', $data -> img ); ?>
@@ -91,12 +92,13 @@
                                                                 class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">تحميل</a>
                                                             @endif
                                                         </td>
-                                                        <td>{{$data ->getActive()}}</td>
                                                         <td>
                                                             {{-- <div class="btn-group" role="group" aria-label="Basic example"> --}}
                                                                  {{-- @if(\App\Models\Role::havePremission(['car_idt'])) --}}
                                                                    <a href="{{route('admin.stock.edit',['id'=> $data->id ])}}"
                                                                    class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">تعديل</a>
+
+                                                                   <a class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1" href="{{ route('admin.stock.print',$data -> id) }}" target=”_blank”>الاستمارة</a>
                                                                    {{-- @endif --}}
                                                             {{-- </div> --}}
                                                         </td>
