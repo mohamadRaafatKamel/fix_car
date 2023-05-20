@@ -158,9 +158,68 @@
 {{-- <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script> --}}
 {{-- <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-messaging.js"></script> --}}
 {{-- <script src="{{asset('assets/admin/js/scripts/firebase.js')}}" type="text/javascript"></script> --}}
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script>
 
+var currDate = '';
+function initWork() {
+    //Today
+    // var todayElement = document.getElementById("today");
+    // todayElement.innerHTML = HijriJS.today().toString();
+    // get today's date in Hijri
+    currDate = HijriJS.today().toString();
+    console.log("currDate");
+    console.log(currDate);
+    // to remove H from yearH ex: 1440H, drop the last character to be 1440
+    currDate = currDate.substring(0, currDate.length - 1);
+    // reformat date from dd/mm/yyyy to dd-mm-yyyy
+    currDate = currDate.split('/').join('-');
+    // set the date input field to currDate so, datepicker sets it as the current date automatically
+    $('#datepicker_hijri').val(currDate);
+}
 
+// $( function() {
+//    $( "#datetimepicker" ).datetimepicker({
+//      changeMonth: true, // show months menu
+//      changeYear: true, // show years menu
+//      dayNamesMin: [ "س", "ج", "خ", "ر", "ث", "ن", "ح" ], // arabic days names
+//      dateFormat: "dd-mm-yy", // set format to dd-mm-yyyy
+//      monthNames: [ "محرم", "صفر", "ربيع الأول", "ربيع الثاني", "جمادى الأول", "جمادى الثاني", "رجب", "شعبان", "رمضان", "شوال", "ذو القعدة", "ذو الحجة" ],
+//      yearRange: "c-0:c+15", // year range in Hijri from current year and +15 years
+//      monthNamesShort: [ "محرم", "صفر", "ربيع ١", "ربيع ٢", "جمادى ١", "جمادى ٢", "رجب", "شعبان", "رمضان", "شوال", "ذو القعدة", "ذو الحجة" ],
+//       showAnim: 'bounce'
+//      });
 
+//     $('#datetimepicker_hijri').datepicker({
+//         defaultDate: HijriJS.today().toString(),
+//         disabledDates: [
+//             moment("12/25/2013"),
+//             new Date(2013, 11 - 1, 21),
+//             "11/22/2013 00:53"
+//         ]
+//     });
+// });
+
+$( function() {
+   $( "#datepicker_hijri" ).datepicker({
+     changeMonth: true, // show months menu
+     changeYear: true, // show years menu
+     dayNamesMin: [ "س", "ج", "خ", "ر", "ث", "ن", "ح" ], // arabic days names
+     dateFormat: "dd-mm-yy", // set format to dd-mm-yyyy
+     monthNames: [ "محرم", "صفر", "ربيع الأول", "ربيع الثاني", "جمادى الأول", "جمادى الثاني", "رجب", "شعبان", "رمضان", "شوال", "ذو القعدة", "ذو الحجة" ],
+     yearRange: "c-0:c+15", // year range in Hijri from current year and +15 years
+     monthNamesShort: [ "محرم", "صفر", "ربيع ١", "ربيع ٢", "جمادى ١", "جمادى ٢", "رجب", "شعبان", "رمضان", "شوال", "ذو القعدة", "ذو الحجة" ],
+      showAnim: 'bounce'
+     });
+});
+
+// window.onload = function(){
+//     initWork();
+// }
+
+</script>
 @yield('script')
 </body>
 </html>

@@ -320,13 +320,25 @@
                                                         </div>
                                                     </div> --}}
                                                     
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6" onload="initWork()">
                                                         <div class="form-group">
                                                             <label for="projectinput1"> التاريخ  </label>
-                                                            <input type="datetime-local" value="" id="f1_date1"
+                                                            <input type="text" id="datepicker_hijri"
+                                                            value="1-1-1444"
+                                                            name="f1_date1" class="form-control">
+                                                            {{-- <div class=" text-center container mt-5 mb-5"> --}}
+                                                                {{-- <div class="row mt-3 mb-3 text-center"> --}}
+                                                                  {{-- <div class="col-6"> --}}
+                                                                    {{-- <input type="text" id="datepicker"> --}}
+                                                                  {{-- </div> --}}
+                                                                {{-- </div> --}}
+                                                            {{-- </div> --}}
+
+
+                                                            {{-- <input type="datetime-local" value="" id="f1_date1"
                                                                    class="form-control" 
                                                                    placeholder="التاريخ "
-                                                                   name="f1_date1">
+                                                                   name="f1_date1"> --}}
                                                             @error('f1_date1')
                                                             <span class="text-danger">{{$message}}</span>
                                                             @enderror
@@ -349,10 +361,13 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_date2"> التاريخ التسليم  </label>
-                                                            <input type="datetime-local" value="" id="f1_date2"
+                                                            {{-- <input type="datetime-local" value="" id="f1_date2"
                                                                    class="form-control" 
                                                                    placeholder="التاريخ التسليم "
-                                                                   name="f1_date2">
+                                                                   name="f1_date2"> --}}
+                                                                   <input type="text" id="datepicker_hijri"
+                                                                   value="1-1-1444"
+                                                                   name="f1_date2" class="form-control">
                                                             @error('f1_date2')
                                                             <span class="text-danger">{{$message}}</span>
                                                             @enderror
@@ -375,10 +390,13 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="projectinput1"> التاريخ دخول السياره  </label>
-                                                            <input type="datetime-local" value="" id="f1_enter_date3"
+                                                            {{-- <input type="datetime-local" value="" id="f1_enter_date3"
                                                                    class="form-control" 
                                                                    placeholder="التاريخ دخول السياره "
-                                                                   name="f1_enter_date3">
+                                                                   name="f1_enter_date3"> --}}
+                                                            <input type="text" id="datepicker_hijri"
+                                                                   value="1-1-1444"
+                                                                   name="f1_enter_date3" class="form-control">
                                                             @error('f1_enter_date3')
                                                             <span class="text-danger">{{$message}}</span>
                                                             @enderror

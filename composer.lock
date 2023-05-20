@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "31ff136d113d6f987cc3f4f58e9a8cd0",
+    "content-hash": "1bf3448a7791dd3a3c2bff86500ecdbc",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1395,6 +1395,83 @@
                 }
             ],
             "time": "2022-10-26T14:07:24+00:00"
+        },
+        {
+            "name": "jenssegers/date",
+            "version": "v4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jenssegers/date.git",
+                "reference": "506f86096e0b512f9ece6ad0ccae62b03c125771"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jenssegers/date/zipball/506f86096e0b512f9ece6ad0ccae62b03c125771",
+                "reference": "506f86096e0b512f9ece6ad0ccae62b03c125771",
+                "shasum": ""
+            },
+            "require": {
+                "nesbot/carbon": "^2.16"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5",
+                "satooshi/php-coveralls": "^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Jenssegers\\Date\\DateServiceProvider"
+                    ],
+                    "aliases": {
+                        "Date": "Jenssegers\\Date\\Date"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jenssegers\\Date\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jens Segers",
+                    "homepage": "https://jenssegers.com"
+                }
+            ],
+            "description": "A date library to help you work with dates in different languages",
+            "homepage": "https://github.com/jenssegers/date",
+            "keywords": [
+                "carbon",
+                "date",
+                "datetime",
+                "i18n",
+                "laravel",
+                "time",
+                "translation"
+            ],
+            "support": {
+                "issues": "https://github.com/jenssegers/date/issues",
+                "source": "https://github.com/jenssegers/date/tree/master"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/jenssegers",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/jenssegers/date",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-04-28T06:35:54+00:00"
         },
         {
             "name": "laravel/framework",
@@ -2810,6 +2887,113 @@
                 "source": "https://github.com/opis/closure/tree/3.6.3"
             },
             "time": "2022-01-27T09:35:39+00:00"
+        },
+        {
+            "name": "pharaonic/laravel-hijri",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Pharaonic/laravel-hijri.git",
+                "reference": "5a65fcaf2fd35745b509c6c860612797c854accf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Pharaonic/laravel-hijri/zipball/5a65fcaf2fd35745b509c6c860612797c854accf",
+                "reference": "5a65fcaf2fd35745b509c6c860612797c854accf",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=6.0",
+                "pharaonic/php-hijri": "*",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pharaonic\\Laravel\\Hijri\\HijriServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pharaonic\\Laravel\\Hijri\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Moamen Eltouny",
+                    "email": "support@raggitech.com"
+                }
+            ],
+            "description": "Laravel - Hijri DateTime (Islamic)",
+            "keywords": [
+                "hijri",
+                "islamic",
+                "laravel hijri",
+                "laravel islamic",
+                "php hijri",
+                "php islamic"
+            ],
+            "support": {
+                "issues": "https://github.com/Pharaonic/laravel-hijri/issues",
+                "source": "https://github.com/Pharaonic/laravel-hijri/tree/1.0"
+            },
+            "time": "2021-05-25T15:29:34+00:00"
+        },
+        {
+            "name": "pharaonic/php-hijri",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Pharaonic/php-hijri.git",
+                "reference": "ae1699afcbd796b86cab4e4f2e6f328cc256c819"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Pharaonic/php-hijri/zipball/ae1699afcbd796b86cab4e4f2e6f328cc256c819",
+                "reference": "ae1699afcbd796b86cab4e4f2e6f328cc256c819",
+                "shasum": ""
+            },
+            "require": {
+                "nesbot/carbon": ">=1.29.0",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Pharaonic\\Hijri\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Moamen Eltouny",
+                    "email": "support@raggitech.com"
+                }
+            ],
+            "description": "PHP - Hijri DateTime (Islamic).",
+            "keywords": [
+                "hijri",
+                "islamic",
+                "php hijri",
+                "php islamic"
+            ],
+            "support": {
+                "issues": "https://github.com/Pharaonic/php-hijri/issues",
+                "source": "https://github.com/Pharaonic/php-hijri/tree/1.0.2"
+            },
+            "time": "2022-02-14T10:33:05+00:00"
         },
         {
             "name": "phpoption/phpoption",

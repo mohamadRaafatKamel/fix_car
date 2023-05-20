@@ -14,7 +14,7 @@
         }
     </style>
     <div class="container">
-        <table class="table table-bordered">
+        <table class="table table-bordered" style="margin-top: 200px">
             <tbody>
                 <tr>
                     <td class="w-25">الاسم المستلم</td>
@@ -56,6 +56,15 @@
                     <div class="row">
                         <div class="col-6"> و ذلك يوم {{ $datas->f1_day2 }}</div>
                         <div class="col-6"> بتاريخ {{ $datas->f1_date2 }}</div>
+                    
+                    <?php
+                        // use Carbon\Carbon;
+                        // $dt = Carbon::now();
+                        // $dt = Carbon::parse($datas->f1_date2);
+                        // echo $dt->toHijri()->isoFormat('LLLL');
+                        
+                        // echo $datas->f1_date2->format('l j F Y H:i:s');
+                    ?>
                     </div>
                 </div>
             </div>
@@ -78,7 +87,7 @@
             <div class="col-4">
                 <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_tes && $datas->f1_tes > 0) checked @endif/>طيس عدد</div><div class="col-3">( @if($datas->f1_tes)  {{$datas->f1_tes}} @else 0 @endif )</div></div>
                 <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_4nth && $datas->f1_4nth > 0) checked @endif/>شنطه عده عدد</div><div class="col-3">( @if($datas->f1_4nth)  {{$datas->f1_4nth}} @else 0 @endif )</div></div>
-                <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_form_img && $datas->f1_form_img > 0) checked @endif/>صوره الاستماره عدد</div><div class="col-3">( @if($datas->f1_form_img)  {{$datas->f1_form_img}} @else 0 @endif )</div></div>
+                <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_form_img && $datas->f1_form_img > 0) checked @endif/>صوره سند التسليم عدد</div><div class="col-3">( @if($datas->f1_form_img)  {{$datas->f1_form_img}} @else 0 @endif )</div></div>
                 <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_remot && $datas->f1_remot > 0) checked @endif/>ريموت عدد</div><div class="col-3">( @if($datas->f1_remot)  {{$datas->f1_remot}} @else 0 @endif )</div></div>
                 <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_front_back_lo7a && $datas->f1_front_back_lo7a > 0) checked @endif/>لوحه اماميه و لوحه خلفيه عدد</div><div class="col-3">( @if($datas->f1_front_back_lo7a)  {{$datas->f1_front_back_lo7a}} @else 0 @endif )</div></div>
                 <div class="row"><div class="col-9"><input type="checkbox" @if($datas->f1_front_back_d3am && $datas->f1_front_back_d3am > 0) checked @endif/>دعام خلفي امامي عدد</div><div class="col-3">( @if($datas->f1_front_back_d3am)  {{$datas->f1_front_back_d3am}} @else 0 @endif )</div></div>
@@ -94,12 +103,12 @@
                 <div>
                     <p style="padding-right: 40px;"> أقر انا الموقع أدناه بانني استلمت السيارة الموضح هويتها بعاليه بكامل موجوداتها  و عوارضها الفنية بعالية و أن: </p>
                     <p style="padding-right: 70px;">
-                        1- اتعهد بالمحافظة علي هذه السيارة. <br/>
-                        2- اتعهد بعدم خروج العربة خارج حدود المدينة المتواجد بها الا بتصريح مسبق.<br/>
-                        3- اتعهد بعدم تسليمها لشخص اخر.<br/>
-                        4- اتعهد باصلاح العربية في حالة وجود اي عوارض جديدة. <br/>
-                        5- اتعهد بدفع المخالفات المترتبة علي السيارة خلال استلامي لها. <br/>
-                        6- اتعهد بالمحافظة علي النظافة.<br/>
+                        ١- اتعهد بالمحافظة علي هذه السيارة. <br/>
+                        ٢- اتعهد بعدم خروج العربة خارج حدود المدينة المتواجد بها الا بتصريح مسبق.<br/>
+                        ٣- اتعهد بعدم تسليمها لشخص اخر.<br/>
+                        ٤- اتعهد باصلاح العربية في حالة وجود اي عوارض جديدة. <br/>
+                        ٥- اتعهد بدفع المخالفات المترتبة علي السيارة خلال استلامي لها. <br/>
+                        ٦- اتعهد بالمحافظة علي النظافة.<br/>
 
                     </p>
                 </div>
@@ -171,7 +180,7 @@
                 </div>
             </div>
             <div class="col-4" style="padding:0; padding-left: 15px;">
-                <p style="text-align: center">الحاسب خروج العربة</p> 
+                <p style="text-align: center">الحاسب الدخول العربة</p> 
                 <div style="border: 1px solid; padding: 5px;">
                     <div>الاسم:</div>
                     <br/><br/>

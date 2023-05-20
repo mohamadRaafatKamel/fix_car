@@ -404,7 +404,15 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="projectinput1"> التاريخ  </label>
-                                                            <input type="datetime-local"   id="f1_date1"
+                                                            <input type="text" id="datepicker_hijri"
+                                                            @if(isset($datas->f1_date1))
+                                                                        value="{{ $datas->f1_date1 }}"
+                                                                    @else
+                                                                        value="{{ old('f1_date1') }}"
+                                                                    @endif
+                                                            name="f1_date1" class="form-control">
+
+                                                            {{-- <input type="datetime-local"   id="f1_date1"
                                                                    class="form-control" 
                                                                    placeholder="التاريخ "
                                                                    @if(isset($datas->f1_date1))
@@ -412,7 +420,7 @@ else
                                                                     @else
                                                                         value="{{ old('f1_date1') }}"
                                                                     @endif
-                                                                   name="f1_date1">
+                                                                   name="f1_date1"> --}}
                                                             @error('f1_date1')
                                                             <span class="text-danger">{{$message}}</span>
                                                             @enderror
@@ -440,7 +448,15 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_date2"> التاريخ التسليم  </label>
-                                                            <input type="datetime-local"   id="f1_date2"
+                                                            <input type="text" id="datepicker_hijri"
+                                                            @if(isset($datas->f1_date2))
+                                                                        value="{{ $datas->f1_date2 }}"
+                                                                    @else
+                                                                        value="{{ old('f1_date2') }}"
+                                                                    @endif
+                                                            name="f1_date2" class="form-control">
+
+                                                            {{-- <input type="datetime-local"   id="f1_date2"
                                                                    class="form-control" 
                                                                    placeholder="التاريخ التسليم "
                                                                    @if(isset($datas->f1_date2))
@@ -448,7 +464,7 @@ else
                                                                     @else
                                                                         value="{{ old('f1_date2') }}"
                                                                     @endif
-                                                                   name="f1_date2">
+                                                                   name="f1_date2"> --}}
                                                             @error('f1_date2')
                                                             <span class="text-danger">{{$message}}</span>
                                                             @enderror
@@ -476,7 +492,15 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="projectinput1"> التاريخ دخول السياره  </label>
-                                                            <input type="datetime-local"   id="f1_enter_date3"
+                                                            <input type="text" id="datepicker_hijri"
+                                                            @if(isset($datas->f1_enter_date3))
+                                                                        value="{{ $datas->f1_enter_date3 }}"
+                                                                    @else
+                                                                        value="{{ old('f1_enter_date3') }}"
+                                                                    @endif
+                                                            name="f1_enter_date3" class="form-control">
+
+                                                            {{-- <input type="datetime-local"   id="f1_enter_date3"
                                                                    class="form-control" 
                                                                    placeholder="التاريخ دخول السياره "
                                                                    @if(isset($datas->f1_enter_date3))
@@ -484,7 +508,7 @@ else
                                                                     @else
                                                                         value="{{ old('f1_enter_date3') }}"
                                                                     @endif
-                                                                   name="f1_enter_date3">
+                                                                   name="f1_enter_date3"> --}}
                                                             @error('f1_enter_date3')
                                                             <span class="text-danger">{{$message}}</span>
                                                             @enderror
