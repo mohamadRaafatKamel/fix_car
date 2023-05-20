@@ -323,9 +323,9 @@
                                                     <div class="col-md-6" onload="initWork()">
                                                         <div class="form-group">
                                                             <label for="projectinput1"> التاريخ  </label>
-                                                            <input type="text" id="datepicker_hijri"
+                                                            <input type="text" 
                                                             value="1-1-1444"
-                                                            name="f1_date1" class="form-control">
+                                                            name="f1_date1" class="form-control datepicker_hijri">
                                                             {{-- <div class=" text-center container mt-5 mb-5"> --}}
                                                                 {{-- <div class="row mt-3 mb-3 text-center"> --}}
                                                                   {{-- <div class="col-6"> --}}
@@ -365,9 +365,9 @@
                                                                    class="form-control" 
                                                                    placeholder="التاريخ التسليم "
                                                                    name="f1_date2"> --}}
-                                                                   <input type="text" id="datepicker_hijri"
+                                                                   <input type="text"
                                                                    value="1-1-1444"
-                                                                   name="f1_date2" class="form-control">
+                                                                   name="f1_date2" class="form-control datepicker_hijri">
                                                             @error('f1_date2')
                                                             <span class="text-danger">{{$message}}</span>
                                                             @enderror
@@ -394,9 +394,9 @@
                                                                    class="form-control" 
                                                                    placeholder="التاريخ دخول السياره "
                                                                    name="f1_enter_date3"> --}}
-                                                            <input type="text" id="datepicker_hijri"
+                                                            <input type="text"
                                                                    value="1-1-1444"
-                                                                   name="f1_enter_date3" class="form-control">
+                                                                   name="f1_enter_date3" class="form-control datepicker_hijri">
                                                             @error('f1_enter_date3')
                                                             <span class="text-danger">{{$message}}</span>
                                                             @enderror

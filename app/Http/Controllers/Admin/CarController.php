@@ -141,7 +141,7 @@ class CarController extends Controller
         'car_fix','car_done','car_cancel']))
             return redirect()->route('admin.dashboard');
 
-        try {
+        // try {
             $data = Car::find($id);
             if (!$data) {
                 return redirect()->route('admin.stock.edit', $id)->with(['error' => '  غير موجوده']);
@@ -169,9 +169,9 @@ class CarController extends Controller
 
             return redirect()->route('admin.stock.edit', ['id' => $id])->with(['success' => 'تم التحديث بنجاح']);
 
-        } catch (\Exception $ex) {
-            return redirect()->route('admin.stock.edit', ['id' => $id])->with(['error' => 'هناك خطا ما يرجي المحاوله فيما بعد']);
-        }
+        // } catch (\Exception $ex) {
+        //     return redirect()->route('admin.stock.edit', ['id' => $id])->with(['error' => 'هناك خطا ما يرجي المحاوله فيما بعد']);
+        // }
     }
 
     public function print_form($id)

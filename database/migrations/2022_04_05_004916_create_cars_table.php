@@ -38,13 +38,13 @@ class CreateCarsTable extends Migration
             $table->string('f1_item_name')->nullable();
             $table->string('f1_car_categ')->nullable();
             $table->string('f1_day1')->nullable();
-            $table->dateTime('f1_date1')->nullable();
+            $table->string('f1_date1')->nullable();
             $table->string('f1_time1')->nullable();
             $table->string('f1_day2')->nullable();
-            $table->dateTime('f1_date2')->nullable();
+            $table->string('f1_date2')->nullable();
             $table->string('f1_time2')->nullable();
             $table->string('f1_enter_day3')->nullable();
-            $table->dateTime('f1_enter_date3')->nullable();
+            $table->string('f1_enter_date3')->nullable();
             $table->string('f1_enter_time3')->nullable();
             $table->string('f1_3gla')->nullable();
             $table->string('f1_3freta')->nullable();

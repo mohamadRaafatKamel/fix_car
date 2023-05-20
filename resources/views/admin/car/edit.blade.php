@@ -404,13 +404,13 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="projectinput1"> التاريخ  </label>
-                                                            <input type="text" id="datepicker_hijri"
+                                                            <input type="text"
                                                             @if(isset($datas->f1_date1))
                                                                         value="{{ $datas->f1_date1 }}"
                                                                     @else
                                                                         value="{{ old('f1_date1') }}"
                                                                     @endif
-                                                            name="f1_date1" class="form-control">
+                                                            name="f1_date1" class="form-control datepicker_hijri">
 
                                                             {{-- <input type="datetime-local"   id="f1_date1"
                                                                    class="form-control" 
@@ -448,13 +448,13 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_date2"> التاريخ التسليم  </label>
-                                                            <input type="text" id="datepicker_hijri"
+                                                            <input type="text" 
                                                             @if(isset($datas->f1_date2))
                                                                         value="{{ $datas->f1_date2 }}"
                                                                     @else
                                                                         value="{{ old('f1_date2') }}"
                                                                     @endif
-                                                            name="f1_date2" class="form-control">
+                                                            name="f1_date2" class="form-control datepicker_hijri">
 
                                                             {{-- <input type="datetime-local"   id="f1_date2"
                                                                    class="form-control" 
@@ -492,13 +492,13 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="projectinput1"> التاريخ دخول السياره  </label>
-                                                            <input type="text" id="datepicker_hijri"
+                                                            <input type="text"  
                                                             @if(isset($datas->f1_enter_date3))
                                                                         value="{{ $datas->f1_enter_date3 }}"
                                                                     @else
                                                                         value="{{ old('f1_enter_date3') }}"
                                                                     @endif
-                                                            name="f1_enter_date3" class="form-control">
+                                                            name="f1_enter_date3" class="form-control datepicker_hijri">
 
                                                             {{-- <input type="datetime-local"   id="f1_enter_date3"
                                                                    class="form-control" 

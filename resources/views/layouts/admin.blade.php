@@ -158,7 +158,8 @@
 {{-- <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script> --}}
 {{-- <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-messaging.js"></script> --}}
 {{-- <script src="{{asset('assets/admin/js/scripts/firebase.js')}}" type="text/javascript"></script> --}}
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+{{-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> --}}
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script>
@@ -203,7 +204,7 @@ function initWork() {
 // });
 
 $( function() {
-   $( "#datepicker_hijri" ).datepicker({
+   $( ".datepicker_hijri" ).datepicker({
      changeMonth: true, // show months menu
      changeYear: true, // show years menu
      dayNamesMin: [ "س", "ج", "خ", "ر", "ث", "ن", "ح" ], // arabic days names
