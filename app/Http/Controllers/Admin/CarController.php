@@ -8,6 +8,7 @@ use App\Models\Asnaf;
 use App\Models\Car;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
 
 class CarController extends Controller
 {
@@ -97,6 +98,46 @@ class CarController extends Controller
         'car_fix','car_done','car_cancel']))
             return redirect()->route('admin.dashboard');
 
+        $request->validate([
+            'car_model' => ['arabic_numbers'],
+            'car_no' => ['arabic_numbers'],
+            'f1_receiver_phone' => ['arabic_numbers'],
+            'f1_receiver_id' => ['arabic_numbers'],
+            'f1_3gla' => ['arabic_numbers'],
+            'f1_3freta' => ['arabic_numbers'],
+            'f1_tfaya' => ['arabic_numbers'],
+            'f1_msls' => ['arabic_numbers'],
+            'f1_radio' => ['arabic_numbers'],
+            'f1_sefty' => ['arabic_numbers'],
+            'f1_mostatel' => ['arabic_numbers'],
+            'f1_tes' => ['arabic_numbers'],
+            'f1_4nth' => ['arabic_numbers'],
+            'f1_form_img' => ['arabic_numbers'],
+            'f1_remot' => ['arabic_numbers'],
+            'f1_front_back_lo7a' => ['arabic_numbers'],
+            'f1_front_back_d3am' => ['arabic_numbers'],
+            'f1_call_dev' => ['arabic_numbers'],
+        ],[
+            'car_model.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'car_no.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_receiver_phone.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_receiver_id.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_3gla.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_3freta.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_tfaya.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_msls.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_radio.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_sefty.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_mostatel.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_tes.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_4nth.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_form_img.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_remot.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_front_back_lo7a.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_front_back_d3am.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_call_dev.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+        ]);
+
         try {
             if (!$request->has('status'))
                 $request->request->add(['status' => 1]);
@@ -141,7 +182,47 @@ class CarController extends Controller
         'car_fix','car_done','car_cancel']))
             return redirect()->route('admin.dashboard');
 
-        // try {
+        $request->validate([
+            'car_model' => ['arabic_numbers'],
+            'car_no' => ['arabic_numbers'],
+            'f1_receiver_phone' => ['arabic_numbers'],
+            'f1_receiver_id' => ['arabic_numbers'],
+            'f1_3gla' => ['arabic_numbers'],
+            'f1_3freta' => ['arabic_numbers'],
+            'f1_tfaya' => ['arabic_numbers'],
+            'f1_msls' => ['arabic_numbers'],
+            'f1_radio' => ['arabic_numbers'],
+            'f1_sefty' => ['arabic_numbers'],
+            'f1_mostatel' => ['arabic_numbers'],
+            'f1_tes' => ['arabic_numbers'],
+            'f1_4nth' => ['arabic_numbers'],
+            'f1_form_img' => ['arabic_numbers'],
+            'f1_remot' => ['arabic_numbers'],
+            'f1_front_back_lo7a' => ['arabic_numbers'],
+            'f1_front_back_d3am' => ['arabic_numbers'],
+            'f1_call_dev' => ['arabic_numbers'],
+        ],[
+            'car_model.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'car_no.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_receiver_phone.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_receiver_id.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_3gla.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_3freta.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_tfaya.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_msls.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_radio.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_sefty.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_mostatel.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_tes.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_4nth.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_form_img.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_remot.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_front_back_lo7a.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_front_back_d3am.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+            'f1_call_dev.arabic_numbers'=> 'الارقام يجب ان تكون باللغه العربية',
+        ]);
+
+        try {
             $data = Car::find($id);
             if (!$data) {
                 return redirect()->route('admin.stock.edit', $id)->with(['error' => '  غير موجوده']);
@@ -169,9 +250,9 @@ class CarController extends Controller
 
             return redirect()->route('admin.stock.edit', ['id' => $id])->with(['success' => 'تم التحديث بنجاح']);
 
-        // } catch (\Exception $ex) {
-        //     return redirect()->route('admin.stock.edit', ['id' => $id])->with(['error' => 'هناك خطا ما يرجي المحاوله فيما بعد']);
-        // }
+        } catch (\Exception $ex) {
+            return redirect()->route('admin.stock.edit', ['id' => $id])->with(['error' => 'هناك خطا ما يرجي المحاوله فيما بعد']);
+        }
     }
 
     public function print_form($id)

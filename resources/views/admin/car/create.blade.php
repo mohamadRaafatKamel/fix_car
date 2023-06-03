@@ -422,7 +422,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_3gla"> عجلة الاحتياط عدد  </label>
-                                                            <input type="number" value="" id="f1_3gla"
+                                                            <input type="text" value="" id="f1_3gla"
                                                                    class="form-control" 
                                                                    placeholder="عجلة الاحتياط عدد "
                                                                    name="f1_3gla">
@@ -435,7 +435,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_3freta"> عفريته و مفتاح عجل عدد  </label>
-                                                            <input type="number" value="" id="f1_3freta"
+                                                            <input type="text" value="" id="f1_3freta"
                                                                    class="form-control" 
                                                                    placeholder="عفريته و مفتاح عجل عدد "
                                                                    name="f1_3freta">
@@ -448,7 +448,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_tfaya"> طفاية حريق عدد  </label>
-                                                            <input type="number" value="" id="f1_tfaya"
+                                                            <input type="text" value="" id="f1_tfaya"
                                                                    class="form-control" 
                                                                    placeholder="طفاية حريق عدد "
                                                                    name="f1_tfaya">
@@ -461,7 +461,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_msls"> مثلث عدد  </label>
-                                                            <input type="number" value="" id="f1_msls"
+                                                            <input type="text" value="" id="f1_msls"
                                                                    class="form-control" 
                                                                    placeholder="مثلث عدد "
                                                                    name="f1_msls">
@@ -474,7 +474,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_radio"> جهاز راديو  مسجل عدد  </label>
-                                                            <input type="number" value="" id="f1_radio"
+                                                            <input type="text" value="" id="f1_radio"
                                                                    class="form-control" 
                                                                    placeholder="جهاز راديو  مسجل عدد "
                                                                    name="f1_radio">
@@ -487,7 +487,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_sefty"> سفتي عدد  </label>
-                                                            <input type="number" value="" id="f1_sefty"
+                                                            <input type="text" value="" id="f1_sefty"
                                                                    class="form-control" 
                                                                    placeholder="سفتي عدد "
                                                                    name="f1_sefty">
@@ -500,7 +500,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_mostatel"> جهاز اشاره مستطيل عدد  </label>
-                                                            <input type="number" value="" id="f1_mostatel"
+                                                            <input type="text" value="" id="f1_mostatel"
                                                                    class="form-control" 
                                                                    placeholder="جهاز اشاره مستطيل عدد "
                                                                    name="f1_mostatel">
@@ -513,7 +513,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_tes"> طيس عدد  </label>
-                                                            <input type="number" value="" id="f1_tes"
+                                                            <input type="text" value="" id="f1_tes"
                                                                    class="form-control" 
                                                                    placeholder="طيس عدد "
                                                                    name="f1_tes">
@@ -526,7 +526,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_4nth"> شنطه عده عدد  </label>
-                                                            <input type="number" value="" id="f1_4nth"
+                                                            <input type="text" value="" id="f1_4nth"
                                                                    class="form-control" 
                                                                    placeholder="شنطه عده عدد "
                                                                    name="f1_4nth">
@@ -539,7 +539,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_form_img"> صوره الاستماره عدد  </label>
-                                                            <input type="number" value="" id="f1_form_img"
+                                                            <input type="text" value="" id="f1_form_img"
                                                                    class="form-control" 
                                                                    placeholder="صوره الاستماره عدد "
                                                                    name="f1_form_img">
@@ -552,7 +552,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_remot"> ريموت عدد  </label>
-                                                            <input type="number" value="" id="f1_remot"
+                                                            <input type="text" value="" id="f1_remot"
                                                                    class="form-control" 
                                                                    placeholder="ريموت عدد "
                                                                    name="f1_remot">
@@ -565,7 +565,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_front_back_lo7a"> لوحه اماميه و لوحه خلفيه عدد  </label>
-                                                            <input type="number" value="" id="f1_front_back_lo7a"
+                                                            <input type="text" value="" id="f1_front_back_lo7a"
                                                                    class="form-control" 
                                                                    placeholder="لوحه اماميه و لوحه خلفيه عدد "
                                                                    name="f1_front_back_lo7a">
@@ -578,7 +578,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_front_back_d3am"> دعام خلفي امامي عدد  </label>
-                                                            <input type="number" value="" id="f1_front_back_d3am"
+                                                            <input type="text" value="" id="f1_front_back_d3am"
                                                                    class="form-control" 
                                                                    placeholder="دعام خلفي امامي عدد "
                                                                    name="f1_front_back_d3am">
@@ -591,7 +591,7 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_call_dev"> جهاز اتصال عدد </label>
-                                                            <input type="number" value="" id="f1_call_dev"
+                                                            <input type="text" value="" id="f1_call_dev"
                                                                    class="form-control" 
                                                                    placeholder="جهاز اتصال عدد "
                                                                    name="f1_call_dev">

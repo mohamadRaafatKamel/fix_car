@@ -15,7 +15,6 @@
         "laravel/socialite": "^5.5",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.4",
-        "pharaonic/laravel-hijri": "^1.0",
         "psr/simple-cache": "1.0",
         "rackspace/php-opencloud": "dev-master"
     },

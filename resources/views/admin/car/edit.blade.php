@@ -539,7 +539,7 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_3gla"> عجلة الاحتياط عدد  </label>
-                                                            <input type="number"   id="f1_3gla"
+                                                            <input type="text"   id="f1_3gla"
                                                                    class="form-control" 
                                                                    placeholder="عجلة الاحتياط عدد "
                                                                    @if(isset($datas->f1_3gla))
@@ -557,7 +557,7 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_3freta"> عفريته و مفتاح عجل عدد  </label>
-                                                            <input type="number"   id="f1_3freta"
+                                                            <input type="text"   id="f1_3freta"
                                                                    class="form-control" 
                                                                    placeholder="عفريته و مفتاح عجل عدد "
                                                                    @if(isset($datas->f1_3freta))
@@ -575,7 +575,7 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_tfaya"> طفاية حريق عدد  </label>
-                                                            <input type="number"   id="f1_tfaya"
+                                                            <input type="text"   id="f1_tfaya"
                                                                    class="form-control" 
                                                                    placeholder="طفاية حريق عدد "
                                                                    @if(isset($datas->f1_tfaya))
@@ -593,7 +593,7 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_msls"> مثلث عدد  </label>
-                                                            <input type="number"   id="f1_msls"
+                                                            <input type="text"   id="f1_msls"
                                                                    class="form-control" 
                                                                    placeholder="مثلث عدد "
                                                                    @if(isset($datas->f1_msls))
@@ -611,7 +611,7 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_radio"> جهاز راديو  مسجل عدد  </label>
-                                                            <input type="number"   id="f1_radio"
+                                                            <input type="text"   id="f1_radio"
                                                                    class="form-control" 
                                                                    placeholder="جهاز راديو  مسجل عدد "
                                                                    @if(isset($datas->f1_radio))
@@ -629,7 +629,7 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_sefty"> سفتي عدد  </label>
-                                                            <input type="number"   id="f1_sefty"
+                                                            <input type="text"   id="f1_sefty"
                                                                    class="form-control" 
                                                                    placeholder="سفتي عدد "
                                                                    @if(isset($datas->f1_sefty))
@@ -647,7 +647,7 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_mostatel"> جهاز اشاره مستطيل عدد  </label>
-                                                            <input type="number"   id="f1_mostatel"
+                                                            <input type="text"   id="f1_mostatel"
                                                                    class="form-control" 
                                                                    placeholder="جهاز اشاره مستطيل عدد "
                                                                    @if(isset($datas->f1_mostatel))
@@ -665,7 +665,7 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_tes"> طيس عدد  </label>
-                                                            <input type="number"   id="f1_tes"
+                                                            <input type="text"   id="f1_tes"
                                                                    class="form-control" 
                                                                    placeholder="طيس عدد "
                                                                    @if(isset($datas->f1_tes))
@@ -683,7 +683,7 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_4nth"> شنطه عده عدد  </label>
-                                                            <input type="number"   id="f1_4nth"
+                                                            <input type="text"   id="f1_4nth"
                                                                    class="form-control" 
                                                                    placeholder="شنطه عده عدد "
                                                                    @if(isset($datas->f1_4nth))
@@ -701,7 +701,7 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_form_img"> صوره الاستماره عدد  </label>
-                                                            <input type="number"   id="f1_form_img"
+                                                            <input type="text"   id="f1_form_img"
                                                                    class="form-control" 
                                                                    placeholder="صوره الاستماره عدد "
                                                                    @if(isset($datas->f1_form_img))
@@ -719,7 +719,7 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_remot"> ريموت عدد  </label>
-                                                            <input type="number"   id="f1_remot"
+                                                            <input type="text"   id="f1_remot"
                                                                    class="form-control" 
                                                                    placeholder="ريموت عدد "
                                                                    @if(isset($datas->f1_remot))
@@ -737,7 +737,7 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_front_back_lo7a"> لوحه اماميه و لوحه خلفيه عدد  </label>
-                                                            <input type="number"   id="f1_front_back_lo7a"
+                                                            <input type="text"   id="f1_front_back_lo7a"
                                                                    class="form-control" 
                                                                    placeholder="لوحه اماميه و لوحه خلفيه عدد "
                                                                    @if(isset($datas->f1_front_back_lo7a))
@@ -755,7 +755,7 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_front_back_d3am"> دعام خلفي امامي عدد  </label>
-                                                            <input type="number"   id="f1_front_back_d3am"
+                                                            <input type="text"   id="f1_front_back_d3am"
                                                                    class="form-control" 
                                                                    placeholder="دعام خلفي امامي عدد "
                                                                    @if(isset($datas->f1_front_back_d3am))
@@ -773,7 +773,7 @@ else
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="f1_call_dev"> جهاز اتصال عدد </label>
-                                                            <input type="number"   id="f1_call_dev"
+                                                            <input type="text"   id="f1_call_dev"
                                                                    class="form-control" 
                                                                    placeholder="جهاز اتصال عدد "
                                                                    @if(isset($datas->f1_call_dev))
