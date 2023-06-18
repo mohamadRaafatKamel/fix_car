@@ -193,13 +193,24 @@
     </div>
 </div>
     
+<div style="text-align: center; padding-top:10px;">
+<button class="btn" id="prt_byn" onclick="prt_byn()">Print</button>
+</div>
 @endsection
 @section('script')
 <script>
-
-window.onload = function(){
+// $(document).ready(function(){
+//     $('#prt_byn').click(function(){
+//         alert("The paragraph was clicked.");
+//     });
+// });
+function prt_byn() {
     window.print();
+    // alert("The paragraph was clicked.");
 }
+// window.onload = function(){
+//     window.print();
+// }
 window.addEventListener("afterprint", (event) => {
   console.log("Aprint");
   window.close();
